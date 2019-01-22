@@ -23,7 +23,7 @@ export default () => {
             'background-color': 'black',
             width: '100vw',
             height: '100vh',
-            'z-index': 10,
+            'z-index': 201,
         }),
     );
 };
