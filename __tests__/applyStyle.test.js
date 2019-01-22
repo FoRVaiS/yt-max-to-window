@@ -15,7 +15,7 @@ it('loads jQuery with a selector', () => {
 it('sets the style attribute value', () => {
     const fakeAttr = jest.fn();
 
-    $.mockReturnValue({
+    $.mockReturnValueOnce({
         attr: fakeAttr,
     });
 
