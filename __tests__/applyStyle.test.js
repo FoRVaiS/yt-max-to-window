@@ -5,6 +5,10 @@ import applyStyle from '../src/modules/applyStyle';
 jest.mock('jquery');
 
 it('loads jQuery with a selector', () => {
+    $.mockReturnValueOnce({
+        attr: () => { },
+    });
+
     const fakeSelector = '.fake-selector';
 
     applyStyle(fakeSelector);
