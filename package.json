@@ -20,6 +20,8 @@
   "main": "src/index.js",
   "scripts": {
     "build": "npm run clean && parcel build src/index.js --no-source-maps --bundle-node-modules",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   }
 }
