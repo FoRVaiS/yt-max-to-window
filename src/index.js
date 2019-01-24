@@ -10,10 +10,10 @@ createToggleButton({
     onclick: ({ toggled }) => {
         if (toggled) {
             maximizeVideo();
-            $('body').css('overflow-y', 'hidden');
+            $('html').css('overflow-y', 'hidden');
         } else {
             minimizeVideo();
-            $('body').css('overflow-y', 'auto');
+            $('html').css('overflow-y', 'auto');
         }
 
         window.dispatchEvent(new Event('resize'));
